@@ -27,6 +27,23 @@ const people:  [string, number][] = [
 // Intersections   =  Para que a variável possua um tipo ou outro.
 const productId: string | number | boolean = 9;
 
+//Enum   =  Para atribuir um valor a um outro valor.
+enum Direction {
+    Up = "Para cima",
+    Down = "Para baixo",
+    Left = "Esquerda",
+    Right = "Direita"
+}
+
+//Type Assertions   =   Para mudar o tipo de uma variável
+const productName: any = "Violão";
+
+// primeira forma 
+let itemIdUm = productName as string;
+// segunda forma
+let itemIdDois = <String>productName
+
 
 console.log(welcome);
 console.log(age);
+console.log(people);

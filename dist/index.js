@@ -20,5 +20,20 @@ const people = [
 ];
 // Intersections   =  Para que a variável possua um tipo ou outro.
 const productId = 9;
+//Enum   =  Para atribuir um valor a um outro valor.
+var Direction;
+(function (Direction) {
+    Direction["Up"] = "Para cima";
+    Direction["Down"] = "Para baixo";
+    Direction["Left"] = "Esquerda";
+    Direction["Right"] = "Direita";
+})(Direction || (Direction = {}));
+//Type Assertions   =   Para mudar o tipo de uma variável
+const productName = "Violão";
+// primeira forma 
+let itemIdUm = productName;
+// segunda forma
+let itemIdDois = productName;
 console.log(welcome);
 console.log(age);
+console.log(people);
