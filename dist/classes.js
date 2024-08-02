@@ -26,6 +26,16 @@ class Person02 {
         return this.firstName;
     }
 }
+// Sub-classe - Demostrando sobre private e protected
+class Employee extends Person02 {
+    constructor(id, nome, idade, sobrenome, email) {
+        super(id, nome, idade, sobrenome, email);
+    }
+    WhoAmI() {
+        return this.firstName; // Protected, Por isso pode ser acessada da classe principal
+        // retrun thin.lastName   // Private, não pode ser acessada da classe principal, pois isso é uma sub-classe
+    }
+}
 const pessoa02 = new Person02(1, "Pedro", 30, "Monteiro", "peter@email.com");
 console.log(pessoa02);
 // ----------------- Conteúdo Adicional ----------------- \\

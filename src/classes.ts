@@ -32,7 +32,7 @@ class Person02 implements IPerson02 {
     readonly firstName: string;
     readonly age: number;
     protected lastName: string;    // Permite a variável ser acessada apenas dentro da sua classe ou sub-classe.
-    private email: string;        // Permite a variável ser acessada apenas dentro da sua classe ou sub-classe.
+    private email: string;        // Permite a variável ser acessada apenas dentro da sua classe.
                                  // protected e private não permitem serem implementados dentro do interface.
 
     constructor(id: number, nome: string, idade: number, sobrenome: string, email: string){
@@ -47,6 +47,18 @@ class Person02 implements IPerson02 {
     // Método
     myName02(): string {
         return this.firstName
+    }
+}
+
+// Sub-classe - Demostrando sobre private e protected
+class Employee extends Person02 {
+    constructor(id: number, nome: string, idade: number, sobrenome: string, email: string) {
+        super(id, nome, idade, sobrenome, email)
+    }
+
+    WhoAmI() {
+        return this.firstName  // Protected, Por isso pode ser acessada da classe principal
+     // retrun thin.lastName   // Private, não pode ser acessada da classe principal, pois isso é uma sub-classe
     }
 }
 
