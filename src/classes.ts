@@ -68,7 +68,7 @@ console.log(pessoa02)
 
 
 
-// ----------------- Conteúdo Adicional ----------------- \\
+// ----------------- CONTEÚDO ADICIONAL ----------------- \\
 
 class CharacterAnime {
     name: string;

@@ -38,7 +38,7 @@ class Employee extends Person02 {
 }
 const pessoa02 = new Person02(1, "Pedro", 30, "Monteiro", "peter@email.com");
 console.log(pessoa02);
-// ----------------- Conteúdo Adicional ----------------- \\
+// ----------------- CONTEÚDO ADICIONAL ----------------- \\
 class CharacterAnime {
     constructor(characterName, characterAnimeName) {
         this.name = characterName;
